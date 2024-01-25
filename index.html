@@ -3,9 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, intitial-scale=1.0" />
+    <!--3 ways to linkt css-->
+    <!--
+      0. browser default styling 
+      1. External file 
+      2. interal 
+      3.inline
+    -->
     <title>HTML Tutorial</title>
+    <!--Syntax for interal css linkage-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--Internal css using style tags inside head of html document-->
+    <style>
+      /* here anyhting you write is treated as css code and not html*/
+      h1{
+        color: #2d3ab3;
+        font-size: 32px;
+      }
+    </style>
   </head>
   <body>
+    <h1 style="color:aqua"> hi </h1>
+    <div class="header">
+      <h3 class="logo">LOGO</h3>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="hire-btn">Hire Me</button>
+      </nav>
+      <button class="hire-btn">Hire Me</button>
+    </div>
     <!-- Division in the pages-->
     <!--TO create a unique label for an html document used attribute:id-->
     <!--To create a grouping label for a set of html element use attribute: class-->
